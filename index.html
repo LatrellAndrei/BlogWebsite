@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Website</title>
+    <title>D-BLOG</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
@@ -11,13 +11,12 @@
     <h1>Hello There</h1>
     <!--Header Section-->
     <header>
-        <a href="#" class="logo">D-BLOG<sup><i class='bx bxs-hand-up' ></i></sup></a>
+        <a href="index.html" class="logo">D-BLOG<sup><i class='bx bxs-hand-up' ></i></sup></a>
         <nav>
             <ul class="navbar">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Posts</a></li>
-                <li><a href="#">How</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="#banner-div">Home</a></li>
+                <li><a href="#feature-section">Posts</a></li>
+                <li><a href="#blog-header">Blog</a></li>
             </ul>
             <div><i class='bx bx-home-alt' id="menu-icon" ></i>
                 <i class='bx bx-home-alt' id="menu-icon2" ></i>
@@ -25,15 +24,16 @@
         </nav>
     </header>
   <!--Banner Section-->
-    <div class="banner">
+    <div class="banner" id="banner-div">
         <div class="banner-content">
             <h1>Discover the Future: Your Ultimate Guide to Tech and AI</h1>
             <p>Stay ahead with the latest in technology. Explore insightful guides on cutting-edge technologies and artificial intelligence.</p>
-            <button class="btn">Read Now</button>
+            <button onclick="scrollToFeature()" class="btn">Read Now</button>
         </div>
     </div>
+
        <!--Feature Section-->
-       <section>
+       <section id="feature-section">
         <div class="featured-post">
             <!--left side Section-->
             <div class="featured-left">
@@ -41,13 +41,14 @@
                     <img src="img/feature1.jpg" alt="">
                     <h2>Gadget Ecosystem of Mobile Phones</h2>
                     <p>Explore the dynamic world of smartphone ecosystems, comparing Android's versatility with iPhone's seamless integration. Dive into vast app libraries, customization options, and unique features that define these mobile giants. Whether you're an Android enthusiast or iPhone aficionado, join our blog for insights, updates, and a deep dive into the technological marvels shaping these cutting-edge ecosystems.</p>
-                    <button class="outline-btn">Read Article</button>
+                    <button id="feature1" class="outline-btn">Read Article</button>
+
                 </div>
                 <div class="featured-card">
                     <img src="img/feature2.png" alt="">
                 <h2>The Power of Artificial Intelligence</h2>
                 <p>Explore the transformative power of Artificial Intelligence (AI) in our tech-driven world. From machine learning to natural language processing, AI is reshaping industries and the future. Join our journey through cutting-edge applications, ethical considerations, and the boundless potential of AI. Whether you're a tech enthusiast or curious about intelligent machines, our blog offers insights into the fascinating realm of Artificial Intelligence.</p>
-                <button class="outline-btn">Read Article</button>
+                <button id="feature2" class="outline-btn">Read Article</button>
             </div>
              </div>
        <!--right side Section-->
@@ -76,7 +77,7 @@
        </section>
     <!--The Best of Technologies! Section-->
     <section>
-        <div class="blog-header">
+        <div class="blog-header" id="blog-header">
             <h2 class="title">The Best of Technologies!</h2>
             <div><a href="#" class="outline-btn">Read All Post</a></div>
         </div>
